@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { connect } from 'react-redux'
 import Title from '../components/Title'
 import BatchItem from './BatchItem'
 import './BatchesContainer.css'
@@ -26,4 +27,8 @@ class BatchesContainer extends PureComponent {
   }
 }
 
-export default BatchesContainer
+const mapStatetoProps = ({ batches}) => ({
+  batches
+})
+
+export default connect(mapStatetoProps)(BatchesContainer)
