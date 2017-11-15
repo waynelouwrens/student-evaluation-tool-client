@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import Title from '../components/Title'
 import BatchItem from './BatchItem'
 import './BatchesContainer.css'
+import BatchEditor from './BatchEditor'
 
 class BatchesContainer extends PureComponent {
   renderBatch(batch, index) {
@@ -17,11 +18,9 @@ class BatchesContainer extends PureComponent {
         </header>
 
         <main>
-          { this.props.batches.map(this.renderBatch) }
+          { this.props.batches.map(this.renderBatch.bind(this)) }
+          <BatchEditor />
         </main>
-        <footer>
-        <button className="createBatch">CREATE A NEW BATCH</button>
-        </footer>
       </div>
     )
   }
