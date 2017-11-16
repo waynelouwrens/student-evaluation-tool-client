@@ -1,4 +1,4 @@
-import { ADD_STUDENT } from '../actions/students/add'
+import { ADD_STUDENT } from '../actions/student/add'
 
 const students = [
   {

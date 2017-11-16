@@ -1,4 +1,4 @@
-import { CREATE_BATCH } from '../actions/batches/create'
+import { CREATE_BATCH } from '../actions/batch/create'
 
 const batches = [
   {
