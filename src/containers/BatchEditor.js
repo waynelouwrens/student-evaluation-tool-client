@@ -1,8 +1,6 @@
 import React, { PureComponent } from 'react'
-import Editor from 'react-medium-editor'
-import toMarkdown from 'to-markdown'
 import { connect } from 'react-redux'
-import createBatch from '../actions/batches/create'
+import createBatch from '../actions/batch/create'
 import 'medium-editor/dist/css/medium-editor.css'
 import 'medium-editor/dist/css/themes/default.css'
 
